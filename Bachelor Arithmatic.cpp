@@ -1,4 +1,61 @@
 #include<bits/stdc++.h>
+using namespace std ;
+int main()
+{
+long long  int b,s;
+ int n=1;
+ double k,l,j=1.0000000;
+while(cin>>b>>s)
+{
+    if(b==0 && s==0)
+        return 0;
+
+k=(double)s/b;
+if(b==0)
+    k=0;
+l=(double)(s-1)/(b-1);
+if( b==0 && s>1)
+     {
+         cout<<"Case "<<n<<":"<<" :-\\"<<endl;
+     }
+ else if(min(k,j)<min(l,j))
+    cout<<"Case "<<n<<":"<<" :-)"<<endl;
+else if(min(k,j)== min(l,j))
+ {
+      //cout<<min(k,j);
+//cout<<min(l,j);
+    cout<<"Case "<<n<<":"<<" :-|"<<endl;
+ }
+   else if (min(k,j)>min(l,j))
+    cout<<"Case "<<n<<":"<<" :-("<<endl;
+n++;
+}
+
+
+ return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/// other way
+
+
+
+
+#include<bits/stdc++.h>
 using namespace std;
 
 int main()
